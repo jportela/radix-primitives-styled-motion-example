@@ -56,6 +56,7 @@ export default function MenuDropdown() {
               transition: { type: "spring", duration: 0.3 },
             }}
             exit={{ scale: 0, opacity: 0, transition: { duration: 0.1 } }}
+            align="start"
             forceMount
           >
             <Item onSelect={() => console.log("Cut")}>Cut</Item>
