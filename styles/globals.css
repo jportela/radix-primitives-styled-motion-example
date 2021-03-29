@@ -1,9 +1,14 @@
-html,
 body {
   padding: 0;
   margin: 0;
+  background: aliceblue;
+  color: teal;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+main {
+  padding: 32px;
 }
 
 a {
@@ -13,4 +18,8 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
 }
