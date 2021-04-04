@@ -11,7 +11,8 @@ export const Button = styled(Menu.Trigger)`
   outline-offset: 2px;
   box-shadow: 0px 1px 1px -1px hsl(44deg 13% 11%);
 
-  &:hover, &:active {
+  &:hover,
+  &:active {
     background-color: hsl(19deg 93% 44%);
   }
 `;

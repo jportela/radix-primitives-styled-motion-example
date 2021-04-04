@@ -12,7 +12,10 @@ export default function Home() {
   return (
     <main>
       <h1>Radix Primitives with styled-components and framer-motion</h1>
-      <p>Example on how to add animation to Radix Primitives, using Framer Motion and Styled Components.</p>
+      <p>
+        Example on how to add animation to Radix Primitives, using Framer Motion
+        and Styled Components.
+      </p>
       <p>Check my blog post for more details (coming soon).</p>
       <ExampleContainer>
         <h2>Menu Dropdown (Final)</h2>
