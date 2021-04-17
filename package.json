@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prettier": "prettier -c --ignore-path .gitignore ."
   },
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "^0.0.17",
@@ -15,5 +16,8 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
   }
 }

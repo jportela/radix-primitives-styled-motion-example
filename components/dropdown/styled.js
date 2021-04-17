@@ -10,7 +10,6 @@ export const Button = styled(Menu.Trigger)`
   padding: 5px 10px;
   outline-offset: 2px;
   box-shadow: 0px 1px 1px -1px hsl(44deg 13% 11%);
-
   &:hover,
   &:active {
     background-color: hsl(19deg 93% 44%);
@@ -46,15 +45,5 @@ export function StyledMenuDropdown() {
         <Item onSelect={() => console.log("Paste")}>Paste</Item>
       </Content>
     </Menu.Root>
-  );
-}
-
-export default function SimpleDropdownPage() {
-  return (
-    <main>
-      <h1>Radix Primitives with styled-components and framer-motion</h1>
-      <h2>Simple Dropdown</h2>
-      <MenuDropdown />
-    </main>
   );
 }

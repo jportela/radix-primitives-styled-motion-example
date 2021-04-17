@@ -9,12 +9,14 @@ const Content = styled(StyledContent)`
 `;
 
 export function FinalMenuDropdown() {
-  const [open, setOpen] = useState(false);
+  // using the plain useState React Hook to control the state of the dropdown
+  const [open, setOpen] = useState(false); // by default it is closed
+
   return (
     <Menu.Root open={open} onOpenChange={setOpen}>
       <Button>Open</Button>
       <AnimatePresence>
-        {open ? (
+        {open ? ( // if it is opened, render the Content. Otherwise, don't render anything (null)
           <Content
             forwardedAs={motion.div}
             initial={{ scale: 0, opacity: 0 }}
@@ -25,7 +27,7 @@ export function FinalMenuDropdown() {
             }}
             exit={{ scale: 0, opacity: 0, transition: { duration: 0.1 } }}
             align="start"
-            forceMount
+            forceMount // forceMount will always mount the Content, see note below
           >
             <Item onSelect={() => console.log("Cut")}>Cut</Item>
             <Item onSelect={() => console.log("Copy")}>Copy</Item>
